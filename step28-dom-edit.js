@@ -1,13 +1,13 @@
-document.getElementById("inputBtn").onclick = function() {
+document.getElementById("inputAddBtn").onclick = function() {
     const input = document.getElementById("animalInput");
     const text = input.value.trim();
     if (text) {
         const li = document.createElement("li");
         li.textContent = text;
 
-        li.onclick = function() {
-            li.remove();
-        };
+        // li.onclick = function() {
+        //     li.remove();
+        // };
         li.ondblclick = function() {
             const currentText = li.textContent;
             const editInput = document.createElement("input");
